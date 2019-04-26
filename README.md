@@ -1,1 +1,2 @@
-# 2018-19-CSAAI-Video
+# 2018-19-CSAAI-
+https://irenerl10.github.io/2018-19-CSAAI-Video/

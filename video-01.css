@@ -1,0 +1,86 @@
+body{
+    background-image: url(FONDO2.jpg);
+}
+#tittle{
+  width: 900px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+#container{
+  width: 900px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+#video1{
+  align: 'center';
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+#video2, #video3, #video4, #video5 {
+  align: 'center';
+  width: 160px;
+  margin-left: 15px;
+  border-radius: 15px;
+}
+#button{
+  margin-top: 10px;
+  margin-left: 100px;
+  border-radius: 15px;
+  background-color: transparent;
+  border-color: transparent;
+}
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+/*neon effect*/
+p{
+  text-align:center;
+  font-size:6em;
+  margin:20px 0 20px 0;
+}
+a{
+  text-decoration:none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+p:nth-child(1) a{
+  color:#FF1177;
+  font-family:Monoton;
+}
+p:nth-child(1) a:hover{
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF1177,
+               0 0 70px  #FF1177,
+               0 0 80px  #FF1177,
+               0 0 100px #FF1177,
+               0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FF1177,
+               0 0 35px #FF1177,
+               0 0 40px #FF1177,
+               0 0 50px #FF1177,
+               0 0 75px #FF1177;
+  }
+}
