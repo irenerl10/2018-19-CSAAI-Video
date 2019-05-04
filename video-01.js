@@ -8,7 +8,7 @@ window.onload = function (){ //cargando pestaña//
 function play() {
    for (var i = 1; i < 7; i++) {
      //en el html incorporo la funcion onclick que al pulsar el boton
-     //music on/off donde tengo en la id esta funcion(play)
+     //music on/off donde tengo en la id esta funcion(play).
       var video = document.getElementById("video" + i);
       //a esta variable le sumo i que en este caso es el numero de los videos
       //que tengo qe se llaman asi
