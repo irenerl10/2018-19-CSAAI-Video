@@ -2,7 +2,7 @@ window.onload = function (){ //cargando pestaña//
   //el 5 es el numero de videos que voy a reproducir si pongo 4 solo 4 si pongo
   //3 solo tres.. ect
    var src = Math.floor(Math.random() * 5) + 1;
-   document.getElementById("video1").src = "videos/" + src + ".mp4";
+   //document.getElementById("video1").src = "videos/" + src + ".mp4";
 }
 
 function play() {
