@@ -6,19 +6,34 @@
     <link rel="stylesheet" href="video-01.css">
     <script src="video-01.js"></script>
   </head>
-  <body onload="main();">
+  <body>
     <div id="tittle">
-      <button id="button" onclick="onoff()"><p><a href="">MUSIC ON/OFF</a></p></button>
+      <!-- para lo de los dos segundos habria que cambiar la funcion Play
+      por la funcion reproducir-->
+      <button id="Play" onclick="play()"><p><a href="">MUSIC ON/OFF</a></p></button>
       <br>
       <strong><div id="reloj"></div></strong>
     </div>
     <div id="container">
-      <video id="video1" ><source src="#" loop></video>
-      <video id="video2" ><source src="videos/1.mp4" onclick="cambiar(this)" loop muted></video>
-      <video id="video3" ><source src="videos/2.mp4" onclick="cambiar(this)" loop muted></video>
-      <video id="video4" ><source src="videos/3.mp4" onclick="cambiar(this)" loop muted></video>
-      <video id="video5" ><source src="videos/4.mp4" onclick="cambiar(this)" loop muted></video>
-      <video id="video6" ><source src="videos/5.mp4" onclick="cambiar(this)" loop muted></video>
+      <!-- CAMBIA EL VIDEO SI PINCHAS SOBRE EL
+      //dentro del scrip de video: autoplay autobuffer controls (para poner controles
+      //en cada video)  -->
+
+      <video id="video1" src="#" autobuffer controls loop></video>
+      <video id="video2" src="videos/1.mp4" onclick="cambiar(this)" autobuffer controls loop muted></video>
+      <video id="video3" src="videos/2.mp4" onclick="cambiar(this)" autobuffer controls loop muted></video>
+      <video id="video4" src="videos/5.mp4" onclick="cambiar(this)" autobuffer controls loop muted></video>
+      <video id="video5" src="videos/4.mp4" onclick="cambiar(this)" autobuffer controls loop muted></video>
+      <video id="video6" src="videos/6.mp4" onclick="cambiar(this)" autobuffer controls loop muted></video>
+
+    <!-- CAMBIA EL VIDEO CADA DOS SEG
+      <video id="video1" src="#" onload="reproducir" loop></video>
+      <video id="video2" src="videos/1.mp4" onload="reproducir" loop muted></video>
+      <video id="video3" src="videos/2.mp4" onload="reproducir" loop muted></video>
+      <video id="video4" src="videos/6.mp4" onload="reproducir" loop muted></video>
+      <video id="video5" src="videos/4.mp4" onload="reproducir" loop muted></video>
+      <video id="video6" src="videos/5.mp4" onload="reproducir" loop muted></video>
+      <strong><div id="reloj"></div></strong>-->
 
     </div>
   </body>
