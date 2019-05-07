@@ -1,2 +1,4 @@
 # 2018-19-CSAAI-
 https://irenerl10.github.io/2018-19-CSAAI-Video/
+
+PARA VERLO BIEN CLONATE EL REPOSITORIO
