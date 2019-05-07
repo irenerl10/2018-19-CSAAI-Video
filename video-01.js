@@ -6,6 +6,7 @@ window.onload = function (){ //cargando pestaña//
 }
 
 function play() {
+  console.log('entra en play');
    for (var i = 1; i < 7; i++) {
      //en el html incorporo la funcion onclick que al pulsar el boton
      //music on/off donde tengo en la id esta funcion(play).
@@ -13,12 +14,66 @@ function play() {
       //a esta variable le sumo i que en este caso es el numero de los videos
       //que tengo qe se llaman asi
       if (video.paused) {
-         video.play();
+        video.play();
+        cambiar(video);
+        console.log(video.currentTime = 2);
+         video1.onmouseover = () => {
+           video1.muted=false;
+           video2.muted = true;
+           video5.muted = true;
+           video4.muted = true;
+           video6.muted = true;
+        }
+
+        video2.onmouseover = () => {
+          video1.muted=true;
+          video2.muted = false;
+          video5.muted = true;
+          video4.muted = true;
+          video6.muted = true;
+        }
+        video3.onmouseover = () => {
+          video1.muted=true;
+          video2.muted = true;
+          video3.muted = false;
+          video5.muted = true;
+          video4.muted = true;
+          video6.muted = true;
+        }
+
+      video4.onmouseover = () => {
+        video1.muted=true;
+        video2.muted = true;
+        video3.muted = true;
+        video5.muted = true;
+        video4.muted = false;
+        video6.muted = true;
+      }
+
+      video5.onmouseover = () => {
+        video1.muted=true;
+        video2.muted = true;
+        video3.muted = true;
+        video4.muted = true;
+        video5.muted = false;
+        video6.muted = true;
+      }
+
+     video6.onmouseover = () => {
+       video1.muted=true;
+       video2.muted = true;
+       video3.muted = true;
+       video4.muted = true;
+       video5.muted = true;
+       video6.muted = false;
+     }
+
       } else {
          video.pause();
       }
    }
 }
+
 function cambiar(video){
   console.log('entra en cambiar');
    var principal = document.getElementById("video1");
@@ -35,20 +90,6 @@ function cambiar(video){
       principal.play();
    }
 }
-
-//me creo una funcion que reproduzca los videos cada dos segundos, en vez de
-//cuando los pinche NO ESTA TERMINADO, SE REPRODUCE DOS SEG Y SE PARA
-function reproducir(){
-  var principal = document.getElementById("video1");
-  do {
-    principal.play();
-    console.log('no sale');
-  } while (principal.currentTime < 3);
-
-  console.log('sale');
-}
-
-
 setInterval(mostrarTiempo, 1000); /*muestra el cronometro y cuenta los seg*/
 
 function mostrarTiempo () {
