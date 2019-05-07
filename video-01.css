@@ -19,14 +19,16 @@ body{
   padding: 20px;
   border-radius: 25px;
 }
-#video1, #video2{
+#video1{
   align: 'center';
   width: 100%;
   border-radius: 15px;
   margin-top: 10px;
   margin-bottom: 60px;
 }
-#video3, #video4, #video5, #video6{
+/* IDEA: para reproducir dos imagenes a la vez video dos debe de ser de tiempo
+  video1*/
+#video2, #video3, #video4, #video5, #video6{
   align: 'center';
   width: 160px;
   margin-left: 15px;
